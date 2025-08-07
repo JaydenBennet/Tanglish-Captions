@@ -430,25 +430,37 @@ function App() {
       {/* Large Testimonial Section */}
       <section className="h-screen flex items-center justify-center px-6 bg-gray-50">
         <div className="max-w-5xl w-full flex flex-col items-center justify-center text-center space-y-8">
-          <div className="w-full max-w-lg">
-            <TextReveal 
-              text="Tanglish Captions revolutionized our workflow making captions 20x faster"
-              className="text-center font-black text-2xl lg:text-4xl leading-relaxed"
-            />
+          <div className="w-full max-w-2xl">
+            <div className="space-y-2">
+              <TextReveal 
+                text="Tanglish Captions revolutionized our" 
+                className="text-center font-black text-2xl lg:text-4xl text-gray-900"
+              />
+              <TextReveal 
+                text="workflow making captions 20x" 
+                className="text-center font-black text-2xl lg:text-4xl text-gray-900"
+              />
+              <TextReveal 
+                text="faster than before today" 
+                className="text-center font-black text-2xl lg:text-4xl text-gray-900"
+              />
+            </div>
           </div>
           
           <motion.div 
-            className="bg-white rounded-lg p-6 shadow-sm text-center"
+            className="bg-white rounded-lg p-6 shadow-sm w-full max-w-md"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col items-center space-y-4">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">S</span>
+            <div className="flex flex-col space-y-4">
+              <div className="flex items-center justify-center">
+                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold">S</span>
+                </div>
               </div>
-              <div className="text-center">
+              <div className="text-right">
                 <p className="font-bold text-black text-lg">Sean O'Donnell</p>
                 <p className="text-gray-600 text-sm">Director of Product Management, Phenom</p>
               </div>
