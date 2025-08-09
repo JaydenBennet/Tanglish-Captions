@@ -306,18 +306,18 @@ function App() {
             viewport={{ once: true }}
           >
             {/* Grid Lines */}
-            <div className="absolute inset-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 grid-rows-6 sm:grid-rows-4 md:grid-rows-3 gap-0">
-              {/* Grid cells for visual reference */}
-              {Array.from({ length: 12 }).map((_, i) => (
-                <div 
-                  key={i} 
-                  className="border-r border-b border-gray-300 last-in-row:border-r-0 last-in-col:border-b-0"
-                  style={{
-                    borderRight: (i % 2 === 1 && i < 2) || (i % 3 === 2 && i >= 2 && i < 6) || (i % 4 === 3 && i >= 6) ? 'none' : undefined,
-                    borderBottom: i >= 10 || (i >= 8 && i < 12) ? 'none' : undefined
-                  }}
-                ></div>
-              ))}
+            <div className="absolute inset-0">
+              {/* Vertical lines */}
+              <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gray-300 sm:left-1/3"></div>
+              <div className="absolute top-0 bottom-0 left-2/3 w-px bg-gray-300 hidden sm:block"></div>
+              <div className="absolute top-0 bottom-0 left-3/4 w-px bg-gray-300 hidden md:block"></div>
+              
+              {/* Horizontal lines */}
+              <div className="absolute left-0 right-0 top-1/6 h-px bg-gray-300 sm:top-1/4 md:top-1/3"></div>
+              <div className="absolute left-0 right-0 top-2/6 h-px bg-gray-300 sm:top-2/4 md:top-2/3"></div>
+              <div className="absolute left-0 right-0 top-3/6 h-px bg-gray-300 sm:top-3/4 md:hidden"></div>
+              <div className="absolute left-0 right-0 top-4/6 h-px bg-gray-300 sm:hidden"></div>
+              <div className="absolute left-0 right-0 top-5/6 h-px bg-gray-300 sm:hidden"></div>
             </div>
 
             {/* Company Names */}
