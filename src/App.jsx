@@ -372,7 +372,7 @@ function App() {
             </p>
           </motion.div>
 
-          <BentoGrid className="mx-auto grid-cols-1 sm:grid-cols-2 md:auto-rows-[20rem]">
+          <BentoGrid className="mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:auto-rows-[20rem]">
             {[
               {
                 Icon: () => (
