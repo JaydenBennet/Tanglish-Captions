@@ -314,7 +314,7 @@ function App() {
                 return (
                   <div 
                     key={i} 
-                    className="border-gray-300 border-r border-b last:border-r-0 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(3n)]:border-r-0 md:[&:nth-child(3n)]:border-r md:[&:nth-child(4n)]:border-r-0 [&:nth-last-child(-n+2)]:border-b-0 sm:[&:nth-last-child(-n+3)]:border-b-0 md:[&:nth-last-child(-n+4)]:border-b-0"
+                    className="border-gray-300 border-r border-b last:border-r-0 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(3n)]:border-r-0 md:[&:nth-child(3n)]:border-r md:[&:nth-child(4n)]:border-r-0 [&:nth-last-child(-n+2)]:border-b-0 sm:[&:nth-last-child(-n+3)]:border-b-0 md:[&:nth-last-child(-n+4)]:border-b-0 [&:nth-child(n+11)]:border-b-0 sm:[&:nth-child(n+10)]:border-b-0 md:[&:nth-child(n+9)]:border-b-0"
                   ></div>
                 );
               })}
