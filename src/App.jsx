@@ -3,6 +3,7 @@ import { BentoCard, BentoGrid } from './components/ui/bento-grid'
 import { TextReveal } from './components/ui/text-reveal'
 import { Marquee } from './components/ui/marquee'
 import { RainbowButton } from './components/ui/rainbow-button'
+import SmoothScroll from './components/ui/smooth-scroll'
 import { useState } from 'react'
 import './App.css'
 
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white text-black overflow-x-hidden">
+      <SmoothScroll intensity={12} />
       {/* Top Banner */}
       <motion.div 
         className="bg-orange-500 text-white text-center py-2 text-sm font-medium"
