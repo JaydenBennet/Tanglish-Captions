@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { BentoCard, BentoGrid } from './components/ui/bento-grid'
 import { TextReveal } from './components/ui/text-reveal'
 import { Marquee } from './components/ui/marquee'
@@ -115,30 +115,32 @@ function App() {
           </div>
 
           {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-            <motion.div 
-              className="md:hidden mt-4 py-4 border-t border-gray-200"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="space-y-4">
-                <a href="#" className="block text-gray-600 hover:text-orange-500 transition-colors font-medium">
-                  Features
-                </a>
-                <a href="#" className="block text-gray-600 hover:text-orange-500 transition-colors font-medium">
-                  Pricing
-                </a>
-                <a href="#" className="block text-gray-600 hover:text-orange-500 transition-colors font-medium">
-                  Docs
-                </a>
-                <button className="w-full bg-white text-black px-6 py-2 rounded-lg font-medium border border-gray-300 hover:bg-gray-50 transition-colors text-center">
-                  Sign In
-                </button>
-              </div>
-            </motion.div>
-          )}
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.div 
+                className="md:hidden mt-4 py-4 border-t border-gray-200 overflow-hidden"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <div className="space-y-4">
+                  <a href="#" className="block text-gray-600 hover:text-orange-500 transition-colors font-medium">
+                    Features
+                  </a>
+                  <a href="#" className="block text-gray-600 hover:text-orange-500 transition-colors font-medium">
+                    Pricing
+                  </a>
+                  <a href="#" className="block text-gray-600 hover:text-orange-500 transition-colors font-medium">
+                    Docs
+                  </a>
+                  <button className="w-full bg-white text-black px-6 py-2 rounded-lg font-medium border border-gray-300 hover:bg-gray-50 transition-colors text-center">
+                    Sign In
+                  </button>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </motion.nav>
 
