@@ -724,7 +724,7 @@ function App() {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-sm sm:text-base">Product</h3>
+              <h3 className="font-semibold mb-4 text-sm sm:text-base text-white">Product</h3>
               <ul className="space-y-2 text-gray-400 text-sm sm:text-base">
                 <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
@@ -733,7 +733,7 @@ function App() {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-sm sm:text-base">Company</h3>
+              <h3 className="font-semibold mb-4 text-sm sm:text-base text-white">Company</h3>
               <ul className="space-y-2 text-gray-400 text-sm sm:text-base">
                 <li><a href="#" className="hover:text-white transition-colors">About</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
@@ -742,7 +742,7 @@ function App() {
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-sm sm:text-base">Support</h3>
+              <h3 className="font-semibold mb-4 text-sm sm:text-base text-white">Support</h3>
               <ul className="space-y-2 text-gray-400 text-sm sm:text-base">
                 <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>

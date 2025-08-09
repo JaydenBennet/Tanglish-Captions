@@ -41,7 +41,7 @@ function Word({ children, progress, range }) {
   return (
     <span className="relative mx-1 inline-block">
       <span className="absolute inset-0 text-gray-300 pointer-events-none -z-10">{children}</span>
-      <motion.span style={{ opacity }} className="relative z-10 text-black dark:text-white">
+      <motion.span style={{ opacity, color: '#000000' }} className="relative z-10 text-black !text-black">
         {children}
       </motion.span>
     </span>
