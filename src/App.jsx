@@ -705,10 +705,10 @@ function App() {
 
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 sm:py-16 px-4 sm:px-6">
+      <footer className="bg-gray-900 text-white py-6 sm:py-12 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="sm:col-span-2 lg:col-span-1">
+          <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="col-span-3 lg:col-span-1 mb-4 lg:mb-0">
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">t</span>
